@@ -24,5 +24,6 @@ class CharacterRepository {
   Future<List<CharacterModel>>getBetterCallSaulCharacters()async {
     final characters=await characterWebServices.getBetterCallSaulCharacters();
     return characters.map((character) => CharacterModel.formJson(character)).toList();
+
   }
 }
